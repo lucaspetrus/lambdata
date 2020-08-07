@@ -27,6 +27,10 @@ class Healer(OverwatchCharacters):
         self.heals10min = heals10min
 
 
+    def healernoise (self):
+        return "Lets Get In There"
+
+
 class Attacker(OverwatchCharacters):
     """This class looks deeper into Attacker attributes"""
     def __init__(self, playerclass, health, speed, damage, healing, shield, winrate,
