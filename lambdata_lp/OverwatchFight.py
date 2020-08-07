@@ -27,7 +27,7 @@ class Healer(OverwatchCharacters):
         self.heals10min = heals10min
 
 
-    def healernoise (self):
+    def mercynoise (self):
         return "Lets Get In There"
 
 
