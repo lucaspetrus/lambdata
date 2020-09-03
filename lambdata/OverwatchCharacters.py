@@ -1,6 +1,6 @@
-class OverwatchCharacters:
+class Overwatch:
     """This class is used to take in Overwatch Characters attributes in order to help assemble the correct team"""
-    def __init__(self, playerclass, health, speed, damage, healing, shield, winrate):
+    def __init__(self, playerclass=10, health=5, speed=6, damage=0, healing=0, shield=0, winrate=0):
         self.playerclass = playerclass
         self.health = health
         self.speed = speed
@@ -13,7 +13,7 @@ class OverwatchCharacters:
         return f"{self.playerclass} {self.health}"
 
 
-class Healer(OverwatchCharacters):
+class Healer(Overwatch):
     """This class looks deeper into the Healers attributes"""
 
     def __init__(self, playerclass, health, speed, damage, healing, shield, winrate,
